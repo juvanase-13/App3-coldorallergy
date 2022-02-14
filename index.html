@@ -95,6 +95,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <body>
 	<!-- title page! -->
 <div id="header" class="w3-container w3-flat-carrot">
+	<!-- title page header -->
 	<h1>Cold or Allergies?</h1>
 </div>
 	
@@ -105,71 +106,88 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
+	<!-- disclaimer -->
+	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 	<!-- page one -->
 <div class="page" id="one">
+	<!-- page one header -->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
 	</div>
-	
+	<!-- page one, question one -->
     	<div id="content" class="w3-container">
         <p>Are your eyes watery or itchy?</p>    
     	</div>
+	<!-- two buttons, one yes, one no, both should take you to page two -->
+	<!-- buttons also add 1 to var allergy for yes, add 1 to var cold for no -->
 <a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
 <a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
 	</div>
+	
+	<!-- page two -->
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
+		<!-- page two heading -->
 		<h1>Question 2</h1>
 	</div>
-	
+	<!-- page two, question two -->
 	<div id="content" class="w3-container">
 		<p>Do you have a fever?</p>
 	</div>
+	<!-- two buttons, one yes, one no, both should take you to page three -->
+	<!-- buttons also add 1 to var allergy for no, add 1 to var cold for yes -->
 <a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
 <a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
+	<!-- page three -->
 <div class="page" id="three">
+	<!-- page three heading-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
-	
+	<!-- page three, question three -->
     	<div id="content" class="w3-container">
         <p>Do you have a sore throat?</p>    
     	</div>
+	<!-- two buttons, one yes, one no, both should take you to page four -->
+	<!-- buttons also add 1 to var allergy for no, add 1 to var cold for yes -->
 <a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
 <a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
-	</div>	
+	</div>
+	<!-- page four -->
 <div class="page" id="four">
+	<!-- page four heading -->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
-	
+	<!-- page four, question four-->
     	<div id="content" class="w3-container">
         <p>Are your symptoms seasonal or chronic?</p>    
     	</div>
+	<!-- two buttons, one yes, one no, both should take you to page five -->
+	<!-- buttons also add 1 to var allergy for yes, add 1 to var cold for no -->
 <a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
 <a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
 	</div>
+	<!--page five-->
 <div class="page" id="five">
+	<!--page five heading-->
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
-	
+	<!--new div for results-->
 	<div id="content" class="w3-container"> 
 	</div>
+	<!--button that shows results in percentages for both var allergy and var cold-->
 <a onclick="calcPercent();" class="w3-btn w3-grey w3-round" id="results"> Results </a>
 	<p id="resultstext">Click the button above to see your results!</p>
 	</div>
-
-
-
-
 	</div>
-
+<!--footer-->
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>

@@ -52,10 +52,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	// function to calculate percentage
 	function calcPercent() {
+		// variable that displays results
 		var resultText = document.getElementById("resultstext");
+		// variable calculating probability of being a cold (percentage)
 		var coldPercent=cold_count/4*100;
+		// variable calculating probability of being allergies (percentage)
 		var allergyPercent=allergy_count/4*100;
-		//text that shows results 
+		//text that shows results with percentage sign
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%<br> Probability it is a cold =" + coldPercent+"%";
 	}
 	
@@ -83,6 +86,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     left: 0vw;
     z-index: 1;
 }
+	<!-- changed margin a bit -->
 	.content{
 		margin:5%;
 	}
@@ -105,6 +109,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
+	<!-- page one -->
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>

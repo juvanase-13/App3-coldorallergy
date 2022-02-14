@@ -36,11 +36,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
+	// variables to keep track of
         var allergy_count = 0;
         var cold_count = 0;
 	var resultText = document.getElementById("results");
 
-
+	// function to keep track of how many "yes" answers for allergies
         function allergyAdd(){
             allergy_count = allergy_count + 1;
 		
@@ -106,7 +107,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 <a href="#two" onclick="allergyAdd(1);" class="w3-btn w3-black"> Yes </a>
 <a href="#two" onclick="coldAdd(1);" class="w3-btn w3-black"> No </a>
-
+	</div>
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
@@ -117,7 +118,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 <a href="#three" onclick="coldAdd(1);" class="w3-btn w3-black"> Yes </a>
 <a href="#three" onclick="allergyAdd(1);" class="w3-btn w3-black"> No </a>
-
+	</div>
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -128,7 +129,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 <a href="#four" onclick="coldAdd(1);" class="w3-btn w3-black"> Yes </a>
 <a href="#four" onclick="allergyAdd(1);" class="w3-btn w3-black"> No </a>
-	
+	</div>	
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
@@ -139,7 +140,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	</div>
 <a href="#five" onclick="allergyAdd(1);" class="w3-btn w3-black"> Yes </a>
 <a href="#five" onclick="coldAdd(1);" class="w3-btn w3-black"> No </a>
-
+	</div>
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
@@ -147,13 +148,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> 
 	</div>
-<a onclick="calcPercents();" class="w3-btn w3-grey w3-round"> Results </a>
-	
+<a onclick="calcPercent();" class="w3-btn w3-grey w3-round"> Results </a>
+	</div>
 
 
 
 
-
+	</div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
